@@ -1,7 +1,7 @@
-import {Component, inject} from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { RouterModule } from '@angular/router';
-import {WelcomeComponent} from "./welcome/welcome.component";
-import {StateService} from "./state/state.service";
+import { WelcomeComponent } from './welcome/welcome.component';
+import { StateService } from './state/state.service';
 
 @Component({
   standalone: true,
@@ -15,6 +15,5 @@ export class AppComponent {
 
   state = inject(StateService);
 
-  constructor() {
-  }
+  constructor() {}
 }
